@@ -9,16 +9,16 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-   Button Bcomidas;
-   Button Blugares;
+   Button botonComidas;
+   Button botonLugares;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Bcomidas =(Button)findViewById(R.id.btlugarescomida);
-        Bcomidas.setOnClickListener(new View.OnClickListener() {
+       botonComidas =(Button)findViewById(R.id.btlugarescomida);
+        botonComidas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent siguiente = new Intent(MainActivity.this, PrincipalComida.class);
@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Blugares =(Button)findViewById(R.id.btlugaresturisticos);
-        Blugares.setOnClickListener(new View.OnClickListener() {
+       botonLugares =(Button)findViewById(R.id.btlugaresturisticos);
+        botonLugares.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent siguiente = new Intent(MainActivity.this, PrincipalLugar.class);
